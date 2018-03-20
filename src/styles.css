@@ -15,7 +15,7 @@
 @import '../lib/lightbox/css/lightbox.css';
 
 body {
-  background: #fff;
+  background: #1f2320;
   color: #666666;
   font-family: "Open Sans", sans-serif;
 }
@@ -79,6 +79,7 @@ h1, h2, h3, h4, h5, h6 {
 #header {
   padding: 30px 0;
   height: 92px;
+  background:#1f2320;  
   position: fixed;
   left: 0;
   top: 0;
@@ -89,8 +90,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #header.header-scrolled {
   background: rgba(0, 0, 0, 0.9);
-  padding: 20px 0;
-  height: 72px;
+  padding: 30px 0;
+  height: 92px;
   transition: all 0.5s;
 }
 
@@ -115,7 +116,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header #logo h1 a, #header #logo h1 a:hover {
-  color: #fff;
+  color: rgb(0, 0, 0);
   padding-left: 10px;
   border-left: 4px solid #18d26e;
 }
@@ -137,19 +138,19 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Intro Section
 --------------------------------------------------------------*/
-#intro {
+/*#intro {
   display: table;
   width: 100%;
   height: 100vh;
   background: #000;
-}
+}*/
 
 #intro .carousel-item {
   width: 100%;
   height: 100vh;
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  /*background-position: center;
+  background-repeat: no-repeat;*/
 }
 
 #intro .carousel-item::before {
@@ -560,7 +561,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Section with background
 --------------------------------*/
 .section-bg {
-  background: #f7f7f7;
+  background: #000000;
 }
 
 /* Featured Services Section
@@ -610,8 +611,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 #about {
   background: url("assets/about-bg.jpg") center top no-repeat fixed;
   background-size: cover;
-  padding: 60px 0 40px 0;
+  padding: 100px 0 40px 0;
   position: relative;
+  color:green;
 }
 
 #about::before {
@@ -620,14 +622,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   left: 0;
   right: 0;
   top: 0;
-  bottom: 0;
-  background: rgba(255, 255, 255, 0.92);
+  bottom: 0;  
   z-index: 9;
 }
 
 #about .container {
   position: relative;
-  z-index: 10;
+  z-index: 0;
 }
 
 #about .about-col {
@@ -705,7 +706,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #services {
   background: #fff;
   background-size: cover;
-  padding: 60px 0 40px 0;
+  padding: 100px 0 40px 0;
 }
 
 #services .box {
@@ -1197,7 +1198,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Contact Section
 --------------------------------*/
 #contact {
-  padding: 60px 0;
+  padding: 100px 0;
+  background: #fff;
 }
 
 #contact .contact-info {
